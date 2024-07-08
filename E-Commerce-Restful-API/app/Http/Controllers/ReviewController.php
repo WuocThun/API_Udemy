@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreReviewRequest;
 use App\Http\Requests\UpdateReviewRequest;
-use App\Http\Resources\Review\ReviewResource;
+//use App\Http\Resources\Review\ReviewResource;
+use App\Http\Resources\ReviewResource;
+use App\Models\Product;
 use App\Models\Review;
 
 class ReviewController extends Controller
@@ -14,8 +16,13 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index( Product $product)
     {
+//        Taọ view API
+//        1. Them resource
+//        Qua contriler thêm đoạn code dưới
+//        return Review::all();
+        return  ReviewResource::collection($product->reviews);
     }
 
 
