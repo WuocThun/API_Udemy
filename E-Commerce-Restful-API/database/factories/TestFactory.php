@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Factories\Model;
+namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ReviewFactory extends Factory
+class TestFactory extends Factory
 {
     /**
      * Define the model's default state.
