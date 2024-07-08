@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreReviewRequest;
 use App\Http\Requests\UpdateReviewRequest;
+use App\Http\Resources\Review\ReviewResource;
 use App\Models\Review;
 
 class ReviewController extends Controller
@@ -15,8 +16,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -48,7 +49,6 @@ class ReviewController extends Controller
      */
     public function show(Review $review)
     {
-        //
     }
 
     /**
